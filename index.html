@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Overlap Investigator</title>
+
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./script.js" defer></script>
+
+    </head>
+    <body>
+        <h1>Color Overlap Investigator</h1>
+
+        <br />
+
+        <div id="output-container" class="container">
+            <div id="actual-container" class="container">
+                <h3>Actual</h3>
+                <div id="actual">
+                    <div class="layer" style="background-color: rgba(255, 255, 0, 0.5);">
+
+                    </div>
+                </div>
+                <p id="actual-color"></p>
+                <hr />
+                <div id="layers">
+                    <!-- Layers appear here -->
+                    <div id="layer-container">
+
+                    </div>
+                    <button id="add-layer-btn">+</button>
+                </div>
+            </div>
+            <div id="calculated-container" class="container">
+                <h3>Calculated</h3>
+                <div id="calculated">
+                </div>
+                <p id="calculated-color"></p>
+            </div>
+        </div>
+    </body>
+</html>
